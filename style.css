@@ -56,16 +56,16 @@ body::before {
 .container__botao {
     border-radius: 16px;
     background: #1875E8;
-    padding: 16px 24px;
+    padding: 1rem 1.5rem;
     width: 100%;
-    font-size: 24px;
+    font-size: 1.125rem;
     font-weight: 700;
     border: none;
     margin-top: 2rem;
 }
 
 .container__texto {
-    margin: 16px 0 16px 0;
+    margin: 1rem 0 1rem 0;
 }
 
 .container__texto-azul {
@@ -80,7 +80,7 @@ body::before {
     border: none;
     color: #1875E8;
     padding: 2rem;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
 }
@@ -90,9 +90,10 @@ body::before {
     gap: 2em;
 }
 
+
 h1 {
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 72px;
+    font-size: 4.5rem;
     padding-bottom: 3rem;
 }
 
@@ -102,7 +103,8 @@ button {
 }
 
 .texto__paragrafo {
-    font-size: 32px;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
     font-weight: 400;
 }
 
@@ -111,9 +113,27 @@ button:disabled {
 }
 
 @media screen and (max-width: 1250px) {
+    .texto__paragrafo {
+        font-size: 1.5rem;
+    }
 
+    .container {
+        width: 75%;
+        height: 75%;
+    }
+
+    .container__texto h1 {
+        font-size: 4rem;
+    }
+
+    .container__conteudo img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1070px) {
     h1 {
-        font-size: 50px;
+        font-size: 1.75rem;
     }
 
     .container{
@@ -121,12 +141,11 @@ button:disabled {
     }
 
     .container__botao {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
-
     .texto__paragrafo {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .container__imagem-pessoa {
@@ -140,6 +159,34 @@ button:disabled {
 
     .container__informacoes {
         padding: 1rem
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    h1 {
+        text-align: center;
+    }
+
+    .texto__paragrafo {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        text-align: center;
+        font-size: 0.875rem;
+    }
+    
+    .container__texto{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+        width: 90%;
+        height: 90%;
     }
 }
 
